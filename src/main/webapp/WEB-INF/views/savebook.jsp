@@ -21,8 +21,8 @@
 <body>
 	<div class="container">
 		<h3> Save Book</h3>
-		<form action="/save" method="post">
-			<input type="hidden" name="id" value=${book.id}>
+		<form action="/LibraryApp/books/save" method="post">
+			<input type="hidden" name="id" value="${book.id}">
 			<div class="form-inline">
 			<input type="text"  name="name" value="${book.name}" placeholder="Book Name" class="form-control mb-4 col-4">
 			</div>
@@ -30,7 +30,7 @@
 			<input type="text"  name="category" value="${book.category}" placeholder="Book Category" class="form-control mb-4 col-4">
 			</div>
 			<div class="form-inline">
-			<input type="text"  name="Author" value="${book.author}" placeholder="Author" class="form-control mb-4 col-4">
+			<input type="text"  name="author" value="${book.author}" placeholder="Author" class="form-control mb-4 col-4">
 			</div>
 			<button type="submit" class="btn btn-info col-2">Submit</button>
 		</form>
